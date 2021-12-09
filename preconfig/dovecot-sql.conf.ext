@@ -1,0 +1,4 @@
+driver = mysql
+connect = "host=127.0.0.1 dbname=postfix_accounts user=postfix_admin password=Pa$$w0rd!"
+default_pass_scheme = SHA512-CRYPT
+password_query = SELECT Email as User, password FROM accounts_table WHERE Email='%u';
